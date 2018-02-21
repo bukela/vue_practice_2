@@ -1,0 +1,18 @@
+.contacted {
+    text-decoration: line-through;
+}
+.age {
+    background: lightslategray;
+    color: white;
+    display: inline-block;
+    font-size: 2em;
+}
+#mouse {
+    width: 500px;
+    height: 500px;
+    background: lightskyblue;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 2em;
+}
