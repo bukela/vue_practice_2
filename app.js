@@ -10,7 +10,9 @@ new Vue({
 				x: 0,
 				y: 0,
 				name1: '',
-				age1: ''
+				age1: '',
+				available: false,
+				nearby: false,
 				},
 			methods: {
 				greet: function(time) {
@@ -35,6 +37,14 @@ new Vue({
 				linkclick: function() {
 					alert('clicked');
 					
+				}
+			},
+			computed: {
+				compClass: function() {
+					return {
+					available: this.available,
+					nearby: this.nearby
+					}
 				}
 			}
 		});

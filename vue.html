@@ -26,6 +26,15 @@
 	<p>{{ name1 }}</p>
 	<div><input type="text" v-model="age1"></div>
 	<p>{{ age1 }}</p>
+	<h2>Dynamic css</h2>
+	<!-- <div v-on:click="available = !available" v-bind:class="{available: available}">
+		<span>Taxi</span>
+	</div> -->
+	<button v-on:click="nearby = !nearby">Toggle nearby</button>
+	<button v-on:click="available = !available">Toggle available</button>
+	<div v-bind:class="compClass">
+		<span>Taxi Two</span>
+	</div>
 </div>
 
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
